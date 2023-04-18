@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confirmButtonSelectedCoachForHavingATrainingSessionWith"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selected_coach_for_having_a_training_session_with_background"
+    tools:context=".SelectedCoachForHavingATrainingSessionWith">
+
+    <Button
+        android:id="@+id/TrainingDrillsCartBack"
+        android:layout_width="241dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_bg"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirmTrainingDrills" />
+
+    <EditText
+        android:id="@+id/editTextActivityTrainingDrillsConfirmAdress"
+        android:layout_width="391dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Team:"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextActivityTrainingDrillsConfirmFullName" />
+
+    <EditText
+        android:id="@+id/editTextActivityTrainingDrillsConfirmFullName"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Coach Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewActivityTrainingDrillsTitle" />
+
+    <TextView
+        android:id="@+id/textViewTrainingDrillsCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Football Academy"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewActivityTrainingDrillsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have a training session"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTrainingDrillsCart"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/editTextActivityTrainingDrillsConfirmPinCode"
+        android:layout_width="387dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_info"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Experience"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextActivityTrainingDrillsConfirmAdress" />
+
+    <EditText
+        android:id="@+id/editTextActivityTrainingDrillsConfirmContactNumber"
+        android:layout_width="387dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_info"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Trophies won"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextActivityTrainingDrillsConfirmPinCode" />
+
+    <Button
+        android:id="@+id/buttonConfirmTrainingDrills"
+        android:layout_width="241dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/btn_bg"
+        android:text="CONFIRM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Select Date"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSelectedCoachForHavingATrainingSessionWithDate"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="07/04/2023"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectDate" />
+
+    <TextView
+        android:id="@+id/textViewSelectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Select Time"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSelectedCoachForHavingATrainingSessionWithTime"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="580dp"
+        android:layout_marginTop="8dp"
+        android:text="12:00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

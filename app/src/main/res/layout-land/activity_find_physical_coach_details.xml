@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/find_physical_coach_background"
+    tools:context=".FindPhysicalCoachDetailsActivity">
+
+    <TextView
+        android:id="@+id/FindPhysicalCoachDetailsAppNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Football Academy"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"></TextView>
+
+    <TextView
+        android:id="@+id/FindPhysicalCoachDetailsNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr Peterson"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FindPhysicalCoachDetailsAppNameTV"
+        app:layout_constraintVertical_bias="0.01"></TextView>
+
+    <Button
+        android:id="@+id/FindPhysicalCoachDetailsBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FindPhysicalCoachDetailsImageView"
+        app:layout_constraintVertical_bias="0.69"></Button>
+
+    <ImageView
+        android:id="@+id/FindPhysicalCoachDetailsImageView"
+        android:layout_width="600dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FindPhysicalCoachDetailsAppNameTV"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

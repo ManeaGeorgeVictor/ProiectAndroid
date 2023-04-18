@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/video_playback_background"
+    tools:context=".VideoPlaybackActivity">
+
+    <TextView
+        android:id="@+id/textViewShowUsAPhotoOfYou"
+        android:layout_width="393dp"
+        android:layout_height="50dp"
+        android:text="Show us a photo of you:"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <TextView
+        android:id="@+id/textViewVideoPlayback"
+        android:layout_width="405dp"
+        android:layout_height="189dp"
+        android:text="Here's a video with the techniques you will learn throughout descovering our application:"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="417dp"
+        android:layout_height="159dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="406dp"
+            android:layout_height="175dp"
+            />
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/showUsAnImageOfYouImageView"
+        android:layout_width="385dp"
+        android:layout_height="213dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"></ImageView>
+
+    <Button
+        android:id="@+id/videoPlaybackBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="4dp"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
